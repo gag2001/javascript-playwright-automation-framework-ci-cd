@@ -21,6 +21,6 @@ test.describe('Login', () => {
     const login = new LoginPage(page);
     await login.open();
     await login.login('standard_user', 'wrong_password');
-    await expect(login.error).toContainText('do not match');
+    await expect(login.error).toContainText('eror');
   });
 });
